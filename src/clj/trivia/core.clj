@@ -1,4 +1,9 @@
-(ns trivia.core)
+(ns trivia.core
+  (:gen-class))
+
+;;test function for testing ;)
+(defn add [x,y]
+  (+ x y))
 
 (defn -main
   "Entry of app"
