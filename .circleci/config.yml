@@ -41,5 +41,4 @@ jobs:
       - run: sudo apt install phantomjs
 
       # run tests!
-      - run: lein test
-      - run: lein doo phantom test
+      - run: lein do test, uberjar
