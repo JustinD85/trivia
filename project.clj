@@ -9,9 +9,11 @@
 
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.520"]
-                 [reagent "0.8.0-rc1"]]
+                 [reagent "0.8.0-rc1"]
+                 [figwheel-sidecar "0.5.19"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
+            [lein-doo "0.1.11"]
             [lein-figwheel "0.5.19"]]
 
   :main ^:skip-aot trivia.core
@@ -26,9 +28,8 @@
                                     "test/js"]
 
   :profiles {:uberjar {:aot :all}
-             :dev {:dependencies [[figwheel-sidecar "0.5.19"]
-                                  [binaryage/devtools "0.8.0"]]
-                   }}
+             :dev {:dependencies [
+                                  [binaryage/devtools "0.8.0"]]}}
 
   :cljsbuild {:builds [{:id "dev"
                         :source-paths ["src/cljs"]
@@ -40,4 +41,9 @@
                                    :output-dir "resources/public/js/compiled/out"
                                    :asset-path "js/compiled/out"
                                    :source-map-timestamp true
-                                   :preloads [devtools.preload]}}]})
+                                   :preloads [devtools.preload]}}
+                       {:id "test"
+                        :source-paths ["src/cljs" "test/cljs"]
+                        :compiler {:output-to "resources/public/js/compiled/test.js"
+                                   :main trivia.runner
+                                   :optimizations :none}}]})
