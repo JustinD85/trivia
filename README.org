@@ -1,0 +1,16 @@
+* Trivia
+
+
+** Premise
+- general self-learning App
+- Initial phase
+  - user registration
+  - user stat tracking
+  - flashcards, populated from outside sources
+  - upload csv
+    - formats
+      - question/answer/category
+      - question/answer
+      - custom e.g. video, images.
+- Post-MVP
+  - guided language lessons
