@@ -12,7 +12,8 @@
                  [reagent "0.8.0-rc1"]
                  [figwheel-sidecar "0.5.19"]
                  [re-frame "0.10.7"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [org.clojure/tools.nrepl "0.2.13"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-doo "0.1.11"]

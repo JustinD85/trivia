@@ -3,7 +3,7 @@
             [reagent.core :as reagent]))
 
 (defn login-panel []
-  [:div.container 
+  [:div.container
    [:div
     [:h3.center "Please Log In"]
     [:form {:role "form"}
@@ -11,14 +11,15 @@
       [:label {:for "inputUsername"} "Username"]
       [:input {:type "text" :id "inputUsername"}]
       ]
-     [:div.form-group 
+     [:div.form-group
       [:label {:for "inputPassword"} "Password"]
       [:input {:type "password", :id "inputPassword"}]
       ]
-     [:input.btn.btn-primary {:type "submit", :value "Log In"} ]
+     [:div.btn.btn-primary
+      {:on-click #(dispatch [:login ])} "Log In" ]
      ]
     [:hr]
-    [:footer [:p " &#9400 ; Baal Software 2019"]]
+    [:footer [:p "&#9400; Baal Software 2019"]]
     ]
    ]
   )
