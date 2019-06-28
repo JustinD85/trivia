@@ -2,5 +2,5 @@
   (:require [re-frame.core :as re-frame]))
 
 (def default-value
-  {:name "Justin"})
+  {:name "default" :password "pw"})
 
