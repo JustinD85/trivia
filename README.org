@@ -1,3 +1,7 @@
-* Architecture WIP
+* Diagrams
 
+** Systems Architecture
 [[https://user-images.githubusercontent.com/18714169/60457920-7fd05600-9bfa-11e9-8da9-2c095ce37eae.png]]
+
+** Routing
+[[https://user-images.githubusercontent.com/18714169/60458825-d50d6700-9bfc-11e9-8c8f-e3d090e8fa1b.png]]
