@@ -1,4 +1,4 @@
-** Typical namespaces of an Application (logical components)
+** Typical namespaces of a Web App(logical components)
 *** core
 - manages the lifecycle of the HTTP(S) Server
 *** config
