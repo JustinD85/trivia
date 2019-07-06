@@ -1,7 +1,22 @@
-* Diagrams
+** Typical namespaces of an Application (logical components)
+*** core
+- manages the lifecycle of the HTTP(S) Server
+*** config
+- manages the map containing configuration variables used by the application
+*** handler
+- root handler for requests/responses that aggregates all the routes.
+*** routes
+-  contains all the namespaces that are responsible for handling all types of client requests
+*** db namespace
+- used for the data model of the application and persistence layer.
+*** layout
+- conatins all logic for generating the application layout(eg html)
+*** middleware
+- all custom middleware used in application is located here
+** Diagrams
 
-** Systems Architecture
+*** Systems Architecture
 [[https://user-images.githubusercontent.com/18714169/60457920-7fd05600-9bfa-11e9-8da9-2c095ce37eae.png]]
 
-** Routing
+*** Routing
 [[https://user-images.githubusercontent.com/18714169/60458825-d50d6700-9bfc-11e9-8c8f-e3d090e8fa1b.png]]
